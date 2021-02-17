@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const compression = require('compression');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // Filter only XHR requests
 // This needs 'X-Requested-With': 'XMLHttpRequest' set
