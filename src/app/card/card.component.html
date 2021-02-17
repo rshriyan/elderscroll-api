@@ -1,0 +1,15 @@
+<!-- Show ghost cards if data is loading -->
+<app-ghost [Visible]="card.loading" ></app-ghost>
+
+<!-- Show actual cards if data is loaded -->
+<div class="card m-1 bg-light" *ngIf="!card.loading">
+  <img class="card-img-top" src="{{ card.imageUrl}}" />
+  <div class="card-body">
+    <h5 class="card-title text">{{ card.name }}</h5>
+    <p class="card-text lead">{{ card.text }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ card.type }}</li>
+    <li class="list-group-item">{{ card.setName }}</li>
+  </ul>
+</div>

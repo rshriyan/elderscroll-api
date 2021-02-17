@@ -1,0 +1,12 @@
+ <div class="container-fluid">
+   <app-search-bar (query)="onSearch($event)" [loadedCardsCount]="loadedCardsCount$ | async"
+                   [totalCardsCount]="totalCardsCount$ | async"></app-search-bar>
+   <main role="main" class="row justify-content-center justify-content-md-start"
+         infiniteScroll
+         [infiniteScrollDistance]="2"
+         [infiniteScrollUpDistance]="1.5"
+         [infiniteScrollThrottle]="50"
+         (scrolled)="onScroll()" style="overflow-y: scroll;">
+     <app-card class="col-auto" *ngFor="let card of allCards$ | async" [card]="card"></app-card>
+   </main>
+ </div>

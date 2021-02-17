@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light fixed-top bg-light">
+  <div class="container-fluid justify-content-center justify-content-md-end">
+      <form class="d-flex">
+        <span class="navbar-text mr-2">{{loadedCardsCount}}/{{totalCardsCount}}</span>
+        <input type="search" class="form-control me-2"  #queryInput type="text" (keyup)="this.query.emit(queryInput.value)" placeholder="Search by name"/>
+      </form>
+    </div>
+</nav>

@@ -1,0 +1,22 @@
+:host {
+
+  .card {
+    width: 15rem;
+    transition: all 0.1s ease-in-out;
+
+    // 576px is the defaut sm config for Bootstrap, so I am keeping it inline with it
+    // https://getbootstrap.com/docs/5.0/layout/grid/
+    // I am widening the cards on small devices(portrait) to negate the whitespace
+    @media screen and (max-width: 576px) {
+      width: 18rem;
+    }
+
+    // Only for desktop
+    &:hover {
+      transform: scale(1.01);
+      box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important
+    }
+  }
+
+}
+

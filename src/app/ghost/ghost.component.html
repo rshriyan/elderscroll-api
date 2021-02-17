@@ -1,0 +1,11 @@
+<!--
+   Aspect ratio 0.60, so width = height * 0.60
+   We can adjust the width of the ghost for smaller screens by having multiple instances, for simplicity I am skipping it.
+-->
+<ngx-skeleton-loader *ngIf="Visible" [count]="1" appearance="circle" animation="progress"  [theme]="{
+width: '15rem',
+'border-radius': '0',
+height: '24rem',
+'margin-bottom': '10px'
+}">
+</ngx-skeleton-loader>
