@@ -1,4 +1,4 @@
-# highspot-elderscroll
+# elderscroll-api
 
 Hello,
 

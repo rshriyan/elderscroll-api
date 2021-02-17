@@ -20,7 +20,7 @@ import {allCardsSelector, hasMoreDataToLoad, loadedCardsCountSelector, totalCard
 })
 export class AppComponent implements OnInit, OnDestroy{
 
-  title = 'highspot-elderscroll';
+  title = 'elderscroll-api';
   allCards$: Observable<Card[]> = new Observable<Card[]>(); /** Includes ghost cards **/
   loadedCardsCount$: Observable<number> = new Observable<number>(); /** Only cards that have data loaded **/
   totalCardsCount$: Observable<number> = new Observable<number>();

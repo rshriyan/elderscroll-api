@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/highspot-elderscroll'),
+      dir: require('path').join(__dirname, './coverage/elderscroll-api'),
       subdir: '.',
       reporters: [
         { type: 'html' },

@@ -12,7 +12,8 @@ export class CardsDataService {
       fromObject: {
         name,
         page: page.toString(),
-        pageSize: pageSize.toString()
+        pageSize: pageSize.toString(),
+        'X-Requested-With': 'XMLHttpRequest',
       }
     });
 

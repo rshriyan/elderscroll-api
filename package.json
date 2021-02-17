@@ -1,7 +1,8 @@
 {
-  "name": "highspot-elderscroll",
+  "name": "elderscroll-api",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --configuration=production",
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
     "build": "ng build",
