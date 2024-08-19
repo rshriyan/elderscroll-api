@@ -1,6 +1,9 @@
 # elderscroll-api
 
-Simple project depicting skeleton loading using ghost elements, load on demand/scroll
+Simple project depicting 
+1. skeleton loading using ghost elements for perceived performance improvement
+2. load on demand/scroll
+3. Hosting review apps in heroku
 
 Implemented using:
 
